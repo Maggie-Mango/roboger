@@ -1,16 +1,11 @@
 
 
-beepBoop = function(num) {
-  let str = num.toString()
-  let array = ['1', '2', '3']
-  for (i=0; i<=num; i++) {
-    output += i + " "
-  } for (let i of str) {
-      if (array.includes(i)) {
-      console.log('boop')
+function beepBoop(num) {
+  let arr = [];
+  let transformedArr = []
+  for (let i=0; i<=num; i++) {
+    arr.push(" "+ i);
   }
+  console.log(arr)
+  
   }
-}
-  
-  
-  console.log(beepBoop(20))
