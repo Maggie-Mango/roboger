@@ -7,11 +7,11 @@ function beepBoop(num) {
   }
 	for (let i in arr) {
 		if (i.includes(3)) {
-    finalArr.push("Won't you be my neighbor?")
+    finalArr.push(" Won't you be my neighbor?")
     } else if (i.includes(2)) {
-      finalArr.push("Boop!")
+      finalArr.push(" Boop!")
     } else if (i.includes(1)) {
-      finalArr.push("Beep!")
+      finalArr.push(" Beep!")
     } else {
       finalArr.push(" " + i)
     }
@@ -20,18 +20,14 @@ function beepBoop(num) {
 }
 
 //ui logic
-
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
     $("#output").show();
-
-
     const userNum =$("input.quantity").val();
     const robogerOutput = (beepBoop(userNum));
     $("#robogerSays").text("MR. ROBOGER SAYS : " + robogerOutput);
-
     $("form#input").hide();
-  })
-})
+  });
+});
 
