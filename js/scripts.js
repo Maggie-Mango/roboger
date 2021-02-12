@@ -13,23 +13,24 @@ function beepBoop(num) {
     } else if (i.includes(1)) {
       finalArr.push("Beep!")
     } else {
-      finalArr.push(i)
+      finalArr.push(" " + i)
     }
 	}
   return finalArr
 }
 
+//ui logic
+
 $(document).ready(function() {
-  $("form.input").submit(function(event) {
+  $("form#input").submit(function(event) {
     event.preventDefault();
+      $("#output").show();
 
-    const userNum =("$input.quantity").val();
+
+    const userNum =$("input.quantity").val();
     const robogerOutput = (beepBoop(userNum));
-
-    $("#output").text(robogerOutput);
-
-    $("form#input").hide();
-    $("#output").show();
-
+    $("#robogerSays").text(robogerOutput);
+    $("form#input").hide(); 
   })
 })
+
