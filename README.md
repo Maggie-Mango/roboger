@@ -44,8 +44,7 @@ https://maggie-mango.github.io/roboger
 
 ## Known Bugs
 
-* 
-* 
+* User will have to refresh page to start over.
 
 ## License
 
