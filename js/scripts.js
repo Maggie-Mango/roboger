@@ -29,11 +29,9 @@ $(document).ready(function() {
 
     const userNum =$("input.quantity").val();
     const robogerOutput = (beepBoop(userNum));
-   
-    $("#robogerSays").text(robogerOutput);
+    $("#robogerSays").text("MR. ROBOGER SAYS : " + robogerOutput);
 
     $("form#input").hide();
-   
   })
 })
 
