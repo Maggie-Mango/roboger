@@ -27,9 +27,9 @@ These **exceptions** are ordered by importance (ex: the first exception will app
 |:--------:|:--------:|:--------:|
 |`beepBoop()`| "It should return a range of numbers from 0 to the number inputted" | (beepBoop("1")).toEqual(0, 1)) |
 |`beepBoop()`| "It should return 'Beep' if 1 is inputted" | (beepBoop("1")).toEqual("Beep!")) |
-|`beepBoop()`| "It recognizes 2 digits and returns 'Boop!' if 12 is inputted" | (beepBoop("20")).toEqual("Boop!") |
-|`beepBoop()`| "It should return 'Boop!' if 12 is inputted" | (beepBoop("12")).toEqual("Boop!") |
-|`beepBoop()`| "It should return 'Won't you be my neighbor?' if 13 is inputted" | (beepBoop("13")).toEqual("Won't you be my neighbor?") |
+|`beepBoop()`| "It recognizes 2 digits and returns 'Boop!' in the range if 20 is inputted" | (beepBoop("20")).toEqual("Boop!") |
+|`beepBoop()`| "It should recognize the exception and return 'Boop!' in the range if 12 is inputted" | (beepBoop("12")).toEqual("Boop!") |
+|`beepBoop()`| "It should recognize the exception and return 'Won't you be my neighbor?' in the range if 13 is inputted" | (beepBoop("13")).toEqual("Won't you be my neighbor?") |
 
 
 ## Setup/Installation Requirements
