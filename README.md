@@ -26,7 +26,7 @@ These **exceptions** are ordered by importance (ex: the first exception will app
 | Describe | Test | Expect |
 |:--------:|:--------:|:--------:|
 |`beepBoop()`| "It should return 'Beep' if 1 is inputted" | (beepBoop("1")).toEqual("Beep!")) |
-|`beepBoop()`| "It should return 'Boop!' if 2 is inputted" | (beepBoop("2")).toEqual("Boop!") |
+|`beepBoop()`| "It recognizes 2 digits and returns 'Boop!' if 20 is inputted" | (beepBoop("20")).toEqual("Boop!") |
 |`beepBoop()`| "It should return 'Won't you be my neighbor?' if 3 is inputted" | (beepBoop("3")).toEqual("Won't you be my neighbor?") |
 |`beepBoop()`| "It should return 'Boop!' if 12 is inputted" | (beepBoop("12")).toEqual("Boop!") |
 |`beepBoop()`| "It should return 'Won't you be my neighbor?' if 13 is inputted" | (beepBoop("13")).toEqual("Won't you be my neighbor?") |
