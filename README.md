@@ -14,7 +14,7 @@
 
 ## Description
 
-A user will be able to input a number the application will output numbers with the following **exceptions**:
+A user will be able to input a number the application will output a range from 0 to the inputted number with the following **exceptions**:
 * Numbers that contain a 1: all digits replaced with "Beep!"
 * Numbers that contain a 2: all digits replaced with "Boop!"
 * Numbers that contain a 3: all digits replaced with "Won't you be my neighbor?"
@@ -25,9 +25,9 @@ These **exceptions** are ordered by importance (ex: the first exception will app
 
 | Describe | Test | Expect |
 |:--------:|:--------:|:--------:|
+|`beepBoop()`| "It should return a range of numbers from 0 to the number inputted" | (beepBoop("1")).toEqual(0, 1)) |
 |`beepBoop()`| "It should return 'Beep' if 1 is inputted" | (beepBoop("1")).toEqual("Beep!")) |
-|`beepBoop()`| "It recognizes 2 digits and returns 'Boop!' if 20 is inputted" | (beepBoop("20")).toEqual("Boop!") |
-|`beepBoop()`| "It should return 'Won't you be my neighbor?' if 3 is inputted" | (beepBoop("3")).toEqual("Won't you be my neighbor?") |
+|`beepBoop()`| "It recognizes 2 digits and returns 'Boop!' if 12 is inputted" | (beepBoop("20")).toEqual("Boop!") |
 |`beepBoop()`| "It should return 'Boop!' if 12 is inputted" | (beepBoop("12")).toEqual("Boop!") |
 |`beepBoop()`| "It should return 'Won't you be my neighbor?' if 13 is inputted" | (beepBoop("13")).toEqual("Won't you be my neighbor?") |
 
