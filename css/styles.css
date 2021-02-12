@@ -1,4 +1,17 @@
+h1 {
+  text-align: center;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:42px;
+  color: white;
+  text-shadow: 2px 3px 2px #000;
 
+}
+.number-input {
+  margin: 3rem;
+}
+
+}
 body{
   text-align:center;
   background-color:#ffcc8e;

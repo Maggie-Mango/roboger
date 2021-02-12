@@ -8,7 +8,15 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-
+<h1>Will you be Mr. Roboger's Neighbor?</h1>
+  <div class="container my-4">
+  <div class="number-input md-number-input">
+    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+    <input class="quantity" min="0" name="quantity" value="1" type="number">
+    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+  </div>
+        
+  </div>
 
   <div ontouchstart="">
   <div class="button">
