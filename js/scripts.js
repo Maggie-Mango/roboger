@@ -24,13 +24,16 @@ function beepBoop(num) {
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
-      $("#output").show();
+    $("#output").show();
 
 
     const userNum =$("input.quantity").val();
     const robogerOutput = (beepBoop(userNum));
+   
     $("#robogerSays").text(robogerOutput);
-    $("form#input").hide(); 
+
+    $("form#input").hide();
+   
   })
 })
 
