@@ -9,8 +9,12 @@ function beepBoop(num) {
   //console.log(arr)
 	for (let i in arr) {
 		if (i.includes(3)) {
-    finalArr.push("won't you be my neighbor")
-    } else {
+    finalArr.push("Won't you be my neighbor?")
+    } else if (i.includes(2)) {
+    finalArr.push("Boop!")
+    } else if (i.includes(1)) {
+    finalArr.push("Beep!")
+    } else{
     finalArr.push(i)
     }
 	}
