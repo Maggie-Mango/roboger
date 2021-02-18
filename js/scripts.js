@@ -5,8 +5,8 @@ function beepBoop(num) {
   for (let i=0; i<=num; i++) {
     arr.push(i);
   }
-	for (let i in arr) {
-		if (i.includes(3)) {
+  for (let i in arr) {
+    if (i.includes(3)) {
     finalArr.push(" Won't you be my neighbor?")
     } else if (i.includes(2)) {
       finalArr.push(" Boop!")
@@ -27,7 +27,6 @@ $(document).ready(function() {
     const userNum =$("input.quantity").val();
     const robogerOutput = (beepBoop(userNum));
     $("#robogerSays").text("MR. ROBOGER SAYS : " + robogerOutput);
-    $("form#input").hide();
   });
 });
 
